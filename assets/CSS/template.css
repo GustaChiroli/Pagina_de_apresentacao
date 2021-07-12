@@ -1,0 +1,229 @@
+* {
+    font-family:arial;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+header {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    width:cover;
+    height:cover;
+    background-color:#979AAF;
+}
+header .logo {
+    display:block;
+    color:#FFFFFF;
+    font-size:55px;
+    margin-left:30px;
+}
+#corpo {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width:cover;
+    height:cover;
+    background-color:#BFC0C0;
+}
+#corpo .venda {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:950px;
+    height:650px;
+    border-radius: 20px;
+    background-color:#FFFFFF;
+    margin:50px;
+}
+#corpo .info {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:left;
+    width:950px;
+    height:650px;
+    border-radius: 20px;
+    background-color:#FFFFFF;
+    margin:50px;
+    padding:20px;
+}
+#corpo .info .tituloinfo {
+    display:flex;
+    font-size:25px;
+    text-transform:uppercase;
+    margin-bottom:0px;
+}
+#corpo .info .divisaoinfo {
+    display:flex;
+    width:100%;
+    height:1px;
+    background-color:black;
+}
+#corpo .info .informacoes {
+    display:flex;
+    flex-wrap:wrap;
+
+}
+#corpo .venda .fotos {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    width:60%;
+    height:100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#corpo .venda .divisao {
+    width:2px;
+    height:100%;
+    background-color:gray;
+}
+#corpo .venda .dados {
+    width:40%;
+    height:100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#corpo .venda .dados .titulo {
+    margin:9px;
+    font-size:22px;
+    margin-bottom: 5%;
+}
+#corpo .venda .dados .divisaodados {
+    width:100%;
+    height:0.3%;
+    background-color:#eeeeee;
+}
+#corpo .venda .dados .preco {
+    margin-top:12px;
+    margin-left:12px;
+    font-size:30px;
+    color:red;
+    text-decoration: bold;
+}
+#corpo .venda .dados .desconto {
+    margin-top:12px;
+    margin-left:12px;
+    margin-bottom:100px;
+    font-size:15px;
+    color:gray;
+    text-decoration-style: double;
+    text-decoration: bold;
+}
+#corpo .venda .dados .fretecompra {
+    margin:12px;
+}
+#corpo .venda .dados .fretecompra label {
+    height:40px;
+    font-size:20px;
+}
+#corpo .venda .dados .fretecompra input[type=text] {
+    height:40px;
+    margin:0px;
+}
+#corpo .venda .dados .fretecompra input[type=submit] {
+    height:40px;
+    width:70px;
+    margin:0px;
+}
+
+#corpo .venda .dados label[for="quantidade"] {
+    margin:12px;
+    font-size:25px;
+}
+
+
+#corpo .venda .dados input[type=submit],
+select {
+    width:90px;
+    height:30px;
+    margin-left:12px;
+}
+header input[type=search],
+[type=submit]{
+
+    margin-right:20px;
+    margin-left:30px;
+    width:350px;
+    height:30px;
+    font-size:15px;
+    border: 1px solid rgb(101, 250, 43);
+}
+header input[type=submit] {
+    width:60px;
+}
+p {
+    font-size:20px;
+    text-align:left;
+}
+
+@media only screen and (min-width:950px) and (max-width:1018px) {
+    header {
+        justify-content:center;        
+    }
+    header .logo {
+        margin-left:0px;
+    }
+    #corpo .venda .fotos {
+        width:auto;
+        height:auto;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+@media only screen and (max-width:950px) {
+    #corpo .venda {
+        flex-wrap:wrap;
+        justify-content:center;
+        width:auto;
+        height:auto;
+    }
+    #corpo .venda .fotos {
+        width:100%;        
+    }
+    #corpo .venda .divisao {
+        display:hide;
+    }
+    #corpo .venda .dados label[for="quantidade"] {
+        display:flex;
+        justify-content:center;
+    }
+    form{
+        display:flex;
+        justify-content:center;
+    }
+    #corpo .venda .dados label[for="quantidade"] {
+        margin:0px;
+    }
+    #corpo .venda .dados .fretecompra label {
+        display:flex;
+        align-items:center;
+        margin-right:12px;
+
+    }
+    header {
+        justify-content:center;        
+    }
+    header .logo {
+        margin-left:0px;
+    }
+    #corpo .venda .fotos {
+        width:auto;
+        height:auto;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    #corpo .info {
+        width:auto;
+        height:auto;
+    }
+}
